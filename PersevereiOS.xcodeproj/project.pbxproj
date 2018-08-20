@@ -1,0 +1,1028 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2442183E3F3698D12B6A156D /* Pods_PersevereiOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66CA94E81B6DFC683877A2D3 /* Pods_PersevereiOSUITests.framework */; };
+		3A33CD4E57B51B7DA5AD2C21 /* Pods_PersevereiOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5D337E8E9C40C49773757B /* Pods_PersevereiOSTests.framework */; };
+		523B4EFC9F4A181DE98FA2D4 /* Pods_PersevereiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDA70AE91067DCF162652CC /* Pods_PersevereiOS.framework */; };
+		DC0BAD16212B0EF100409040 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BAD15212B0EF100409040 /* AppDelegate.swift */; };
+		DC0BAD1B212B0EF100409040 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC0BAD19212B0EF100409040 /* Main.storyboard */; };
+		DC0BAD1D212B0EF300409040 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC0BAD1C212B0EF300409040 /* Assets.xcassets */; };
+		DC0BAD20212B0EF300409040 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC0BAD1E212B0EF300409040 /* LaunchScreen.storyboard */; };
+		DC0BAD2B212B0EF300409040 /* PersevereiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BAD2A212B0EF300409040 /* PersevereiOSTests.swift */; };
+		DC0BAD36212B0EF300409040 /* PersevereiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BAD35212B0EF300409040 /* PersevereiOSUITests.swift */; };
+		DC0BAD7D212B106700409040 /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0BAD4A212B106600409040 /* UITableView+FDTemplateLayoutCell.m */; };
+		DC0BAD7E212B106700409040 /* UITableView+FDKeyedHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0BAD4C212B106600409040 /* UITableView+FDKeyedHeightCache.m */; };
+		DC0BAD7F212B106700409040 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0BAD4D212B106600409040 /* UITableView+FDTemplateLayoutCellDebug.m */; };
+		DC0BAD80212B106700409040 /* UITableView+FDIndexPathHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0BAD4E212B106600409040 /* UITableView+FDIndexPathHeightCache.m */; };
+		DC0BAD81212B106700409040 /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0BAD52212B106600409040 /* HMSegmentedControl.m */; };
+		DC0BAD82212B106700409040 /* FTPopOverMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0BAD57212B106600409040 /* FTPopOverMenu.m */; };
+		DC0BAD83212B106700409040 /* ValidateRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BAD59212B106600409040 /* ValidateRegex.swift */; };
+		DC0BAD84212B106700409040 /* UIViewController+TopMostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BAD5A212B106600409040 /* UIViewController+TopMostViewController.swift */; };
+		DC0BAD85212B106700409040 /* UIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BAD5B212B106600409040 /* UIConstant.swift */; };
+		DC0BAD86212B106700409040 /* SwiftExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BAD5C212B106600409040 /* SwiftExtension.swift */; };
+		DC0BAD87212B106700409040 /* UIKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BAD5D212B106600409040 /* UIKitExtension.swift */; };
+		DC0BAD88212B106700409040 /* SCNKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BAD5E212B106600409040 /* SCNKitExtension.swift */; };
+		DC0BAD89212B106700409040 /* FoundationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BAD5F212B106600409040 /* FoundationExtension.swift */; };
+		DC0BAD8A212B106700409040 /* RequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BAD62212B106600409040 /* RequestAPI.swift */; };
+		DC0BAD8B212B106700409040 /* NetworkString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BAD63212B106600409040 /* NetworkString.swift */; };
+		DC0BAD8C212B106700409040 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BAD64212B106600409040 /* BaseResponse.swift */; };
+		DC0BAD8D212B106700409040 /* RequstProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BAD65212B106600409040 /* RequstProtocol.swift */; };
+		DC0BAD8E212B106700409040 /* RequestConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BAD66212B106600409040 /* RequestConfig.swift */; };
+		DC0BAD8F212B106700409040 /* Single+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BAD67212B106600409040 /* Single+ObjectMapper.swift */; };
+		DC0BAD90212B106700409040 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BAD68212B106600409040 /* DeviceInfo.swift */; };
+		DC0BAD91212B106700409040 /* Response+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BAD69212B106600409040 /* Response+ObjectMapper.swift */; };
+		DC0BAD92212B106700409040 /* ToastProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BAD6B212B106600409040 /* ToastProtocol.swift */; };
+		DC0BAD93212B106700409040 /* UIAlertViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BAD6C212B106600409040 /* UIAlertViewProtocol.swift */; };
+		DC0BAD94212B106700409040 /* PopProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BAD6D212B106600409040 /* PopProtocol.swift */; };
+		DC0BAD95212B106700409040 /* RxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BAD6F212B106600409040 /* RxViewController.swift */; };
+		DC0BAD96212B106700409040 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BAD70212B106600409040 /* BaseViewController.swift */; };
+		DC0BAD97212B106700409040 /* RxBackItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BAD71212B106600409040 /* RxBackItemViewController.swift */; };
+		DC0BAD98212B106700409040 /* BaseBackItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BAD72212B106600409040 /* BaseBackItemViewController.swift */; };
+		DC0BAD99212B106700409040 /* BaseWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BAD73212B106600409040 /* BaseWebViewController.swift */; };
+		DC0BAD9A212B106700409040 /* BasePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BAD74212B106600409040 /* BasePageViewModel.swift */; };
+		DC0BAD9B212B106700409040 /* StaticWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BAD75212B106600409040 /* StaticWebViewViewController.swift */; };
+		DC0BAD9C212B106700409040 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BAD76212B106600409040 /* BaseNavigationController.swift */; };
+		DC0BAD9D212B106700409040 /* EnvConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BAD7A212B106700409040 /* EnvConfigure.swift */; };
+		DC0BAD9E212B106700409040 /* XCGLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0BAD7B212B106700409040 /* XCGLog.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC0BAD27212B0EF300409040 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC0BAD0A212B0EF100409040 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC0BAD11212B0EF100409040;
+			remoteInfo = PersevereiOS;
+		};
+		DC0BAD32212B0EF300409040 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC0BAD0A212B0EF100409040 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC0BAD11212B0EF100409040;
+			remoteInfo = PersevereiOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A7A3474660B6FA3882E03A2 /* Pods-PersevereiOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersevereiOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PersevereiOSUITests/Pods-PersevereiOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5E310CE0644C3324B7DBE59B /* Pods-PersevereiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersevereiOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PersevereiOSTests/Pods-PersevereiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		66CA94E81B6DFC683877A2D3 /* Pods_PersevereiOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PersevereiOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A075D6D892EE78FE3B88417 /* Pods-PersevereiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersevereiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-PersevereiOS/Pods-PersevereiOS.release.xcconfig"; sourceTree = "<group>"; };
+		8D2298E502B8324C94A06D6E /* Pods-PersevereiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersevereiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PersevereiOS/Pods-PersevereiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		CB5D337E8E9C40C49773757B /* Pods_PersevereiOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PersevereiOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDDA70AE91067DCF162652CC /* Pods_PersevereiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PersevereiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC0BAD12212B0EF100409040 /* PersevereiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersevereiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC0BAD15212B0EF100409040 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC0BAD1A212B0EF100409040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC0BAD1C212B0EF300409040 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC0BAD1F212B0EF300409040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC0BAD21212B0EF300409040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC0BAD26212B0EF300409040 /* PersevereiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersevereiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC0BAD2A212B0EF300409040 /* PersevereiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersevereiOSTests.swift; sourceTree = "<group>"; };
+		DC0BAD2C212B0EF300409040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC0BAD31212B0EF300409040 /* PersevereiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersevereiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC0BAD35212B0EF300409040 /* PersevereiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersevereiOSUITests.swift; sourceTree = "<group>"; };
+		DC0BAD37212B0EF300409040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC0BAD48212B106600409040 /* UITableView+FDKeyedHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDKeyedHeightCache.h"; sourceTree = "<group>"; };
+		DC0BAD49212B106600409040 /* UITableView+FDTemplateLayoutCellDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCellDebug.h"; sourceTree = "<group>"; };
+		DC0BAD4A212B106600409040 /* UITableView+FDTemplateLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCell.m"; sourceTree = "<group>"; };
+		DC0BAD4B212B106600409040 /* UITableView+FDIndexPathHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDIndexPathHeightCache.h"; sourceTree = "<group>"; };
+		DC0BAD4C212B106600409040 /* UITableView+FDKeyedHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDKeyedHeightCache.m"; sourceTree = "<group>"; };
+		DC0BAD4D212B106600409040 /* UITableView+FDTemplateLayoutCellDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCellDebug.m"; sourceTree = "<group>"; };
+		DC0BAD4E212B106600409040 /* UITableView+FDIndexPathHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDIndexPathHeightCache.m"; sourceTree = "<group>"; };
+		DC0BAD4F212B106600409040 /* UITableView+FDTemplateLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCell.h"; sourceTree = "<group>"; };
+		DC0BAD51212B106600409040 /* HMSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSegmentedControl.h; sourceTree = "<group>"; };
+		DC0BAD52212B106600409040 /* HMSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedControl.m; sourceTree = "<group>"; };
+		DC0BAD56212B106600409040 /* FTPopOverMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTPopOverMenu.h; sourceTree = "<group>"; };
+		DC0BAD57212B106600409040 /* FTPopOverMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTPopOverMenu.m; sourceTree = "<group>"; };
+		DC0BAD59212B106600409040 /* ValidateRegex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidateRegex.swift; sourceTree = "<group>"; };
+		DC0BAD5A212B106600409040 /* UIViewController+TopMostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+TopMostViewController.swift"; sourceTree = "<group>"; };
+		DC0BAD5B212B106600409040 /* UIConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIConstant.swift; sourceTree = "<group>"; };
+		DC0BAD5C212B106600409040 /* SwiftExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftExtension.swift; sourceTree = "<group>"; };
+		DC0BAD5D212B106600409040 /* UIKitExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExtension.swift; sourceTree = "<group>"; };
+		DC0BAD5E212B106600409040 /* SCNKitExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNKitExtension.swift; sourceTree = "<group>"; };
+		DC0BAD5F212B106600409040 /* FoundationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundationExtension.swift; sourceTree = "<group>"; };
+		DC0BAD62212B106600409040 /* RequestAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestAPI.swift; sourceTree = "<group>"; };
+		DC0BAD63212B106600409040 /* NetworkString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkString.swift; sourceTree = "<group>"; };
+		DC0BAD64212B106600409040 /* BaseResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		DC0BAD65212B106600409040 /* RequstProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequstProtocol.swift; sourceTree = "<group>"; };
+		DC0BAD66212B106600409040 /* RequestConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestConfig.swift; sourceTree = "<group>"; };
+		DC0BAD67212B106600409040 /* Single+ObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Single+ObjectMapper.swift"; sourceTree = "<group>"; };
+		DC0BAD68212B106600409040 /* DeviceInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
+		DC0BAD69212B106600409040 /* Response+ObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Response+ObjectMapper.swift"; sourceTree = "<group>"; };
+		DC0BAD6B212B106600409040 /* ToastProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastProtocol.swift; sourceTree = "<group>"; };
+		DC0BAD6C212B106600409040 /* UIAlertViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertViewProtocol.swift; sourceTree = "<group>"; };
+		DC0BAD6D212B106600409040 /* PopProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopProtocol.swift; sourceTree = "<group>"; };
+		DC0BAD6F212B106600409040 /* RxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxViewController.swift; sourceTree = "<group>"; };
+		DC0BAD70212B106600409040 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		DC0BAD71212B106600409040 /* RxBackItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxBackItemViewController.swift; sourceTree = "<group>"; };
+		DC0BAD72212B106600409040 /* BaseBackItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseBackItemViewController.swift; sourceTree = "<group>"; };
+		DC0BAD73212B106600409040 /* BaseWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWebViewController.swift; sourceTree = "<group>"; };
+		DC0BAD74212B106600409040 /* BasePageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePageViewModel.swift; sourceTree = "<group>"; };
+		DC0BAD75212B106600409040 /* StaticWebViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticWebViewViewController.swift; sourceTree = "<group>"; };
+		DC0BAD76212B106600409040 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		DC0BAD7A212B106700409040 /* EnvConfigure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvConfigure.swift; sourceTree = "<group>"; };
+		DC0BAD7B212B106700409040 /* XCGLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCGLog.swift; sourceTree = "<group>"; };
+		E6D9CBAFC5E7194C2572295E /* Pods-PersevereiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersevereiOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PersevereiOSTests/Pods-PersevereiOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		F7EB64903B85DE2B16690CCB /* Pods-PersevereiOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersevereiOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PersevereiOSUITests/Pods-PersevereiOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC0BAD0F212B0EF100409040 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				523B4EFC9F4A181DE98FA2D4 /* Pods_PersevereiOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC0BAD23212B0EF300409040 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A33CD4E57B51B7DA5AD2C21 /* Pods_PersevereiOSTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC0BAD2E212B0EF300409040 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2442183E3F3698D12B6A156D /* Pods_PersevereiOSUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC0BAD09212B0EF100409040 = {
+			isa = PBXGroup;
+			children = (
+				DC0BAD14212B0EF100409040 /* PersevereiOS */,
+				DC0BAD29212B0EF300409040 /* PersevereiOSTests */,
+				DC0BAD34212B0EF300409040 /* PersevereiOSUITests */,
+				DC0BAD13212B0EF100409040 /* Products */,
+				E789621CD9579E209C3F7A51 /* Pods */,
+				F053F4B5D3101DA9C0FF1662 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DC0BAD13212B0EF100409040 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC0BAD12212B0EF100409040 /* PersevereiOS.app */,
+				DC0BAD26212B0EF300409040 /* PersevereiOSTests.xctest */,
+				DC0BAD31212B0EF300409040 /* PersevereiOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC0BAD14212B0EF100409040 /* PersevereiOS */ = {
+			isa = PBXGroup;
+			children = (
+				DC0BAD77212B106700409040 /* Api */,
+				DC0BAD6E212B106600409040 /* BaseClass */,
+				DC0BAD43212B106600409040 /* Business */,
+				DC0BAD79212B106700409040 /* Configure */,
+				DC0BAD58212B106600409040 /* Extension */,
+				DC0BAD45212B106600409040 /* Modules */,
+				DC0BAD61212B106600409040 /* Network */,
+				DC0BAD6A212B106600409040 /* Protocol */,
+				DC0BAD7C212B106700409040 /* Resource */,
+				DC0BAD78212B106700409040 /* storyboards */,
+				DC0BAD60212B106600409040 /* Support */,
+				DC0BAD21212B0EF300409040 /* Info.plist */,
+			);
+			path = PersevereiOS;
+			sourceTree = "<group>";
+		};
+		DC0BAD29212B0EF300409040 /* PersevereiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC0BAD2A212B0EF300409040 /* PersevereiOSTests.swift */,
+				DC0BAD2C212B0EF300409040 /* Info.plist */,
+			);
+			path = PersevereiOSTests;
+			sourceTree = "<group>";
+		};
+		DC0BAD34212B0EF300409040 /* PersevereiOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DC0BAD35212B0EF300409040 /* PersevereiOSUITests.swift */,
+				DC0BAD37212B0EF300409040 /* Info.plist */,
+			);
+			path = PersevereiOSUITests;
+			sourceTree = "<group>";
+		};
+		DC0BAD43212B106600409040 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				DC0BAD44212B106600409040 /* Main */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		DC0BAD44212B106600409040 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DC0BAD15212B0EF100409040 /* AppDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DC0BAD45212B106600409040 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				DC0BAD46212B106600409040 /* UITableView+FDTemplateLayoutCell */,
+				DC0BAD50212B106600409040 /* HMSegmentedControl */,
+				DC0BAD53212B106600409040 /* MLMOptionSelectView */,
+				DC0BAD55212B106600409040 /* FTPopOverMenu */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		DC0BAD46212B106600409040 /* UITableView+FDTemplateLayoutCell */ = {
+			isa = PBXGroup;
+			children = (
+				DC0BAD47212B106600409040 /* Classes */,
+			);
+			path = "UITableView+FDTemplateLayoutCell";
+			sourceTree = "<group>";
+		};
+		DC0BAD47212B106600409040 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DC0BAD48212B106600409040 /* UITableView+FDKeyedHeightCache.h */,
+				DC0BAD49212B106600409040 /* UITableView+FDTemplateLayoutCellDebug.h */,
+				DC0BAD4A212B106600409040 /* UITableView+FDTemplateLayoutCell.m */,
+				DC0BAD4B212B106600409040 /* UITableView+FDIndexPathHeightCache.h */,
+				DC0BAD4C212B106600409040 /* UITableView+FDKeyedHeightCache.m */,
+				DC0BAD4D212B106600409040 /* UITableView+FDTemplateLayoutCellDebug.m */,
+				DC0BAD4E212B106600409040 /* UITableView+FDIndexPathHeightCache.m */,
+				DC0BAD4F212B106600409040 /* UITableView+FDTemplateLayoutCell.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		DC0BAD50212B106600409040 /* HMSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				DC0BAD51212B106600409040 /* HMSegmentedControl.h */,
+				DC0BAD52212B106600409040 /* HMSegmentedControl.m */,
+			);
+			path = HMSegmentedControl;
+			sourceTree = "<group>";
+		};
+		DC0BAD53212B106600409040 /* MLMOptionSelectView */ = {
+			isa = PBXGroup;
+			children = (
+				DC0BAD54212B106600409040 /* selectView */,
+			);
+			path = MLMOptionSelectView;
+			sourceTree = "<group>";
+		};
+		DC0BAD54212B106600409040 /* selectView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = selectView;
+			sourceTree = "<group>";
+		};
+		DC0BAD55212B106600409040 /* FTPopOverMenu */ = {
+			isa = PBXGroup;
+			children = (
+				DC0BAD56212B106600409040 /* FTPopOverMenu.h */,
+				DC0BAD57212B106600409040 /* FTPopOverMenu.m */,
+			);
+			path = FTPopOverMenu;
+			sourceTree = "<group>";
+		};
+		DC0BAD58212B106600409040 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DC0BAD59212B106600409040 /* ValidateRegex.swift */,
+				DC0BAD5A212B106600409040 /* UIViewController+TopMostViewController.swift */,
+				DC0BAD5B212B106600409040 /* UIConstant.swift */,
+				DC0BAD5C212B106600409040 /* SwiftExtension.swift */,
+				DC0BAD5D212B106600409040 /* UIKitExtension.swift */,
+				DC0BAD5E212B106600409040 /* SCNKitExtension.swift */,
+				DC0BAD5F212B106600409040 /* FoundationExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DC0BAD60212B106600409040 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		DC0BAD61212B106600409040 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DC0BAD62212B106600409040 /* RequestAPI.swift */,
+				DC0BAD63212B106600409040 /* NetworkString.swift */,
+				DC0BAD64212B106600409040 /* BaseResponse.swift */,
+				DC0BAD65212B106600409040 /* RequstProtocol.swift */,
+				DC0BAD66212B106600409040 /* RequestConfig.swift */,
+				DC0BAD67212B106600409040 /* Single+ObjectMapper.swift */,
+				DC0BAD68212B106600409040 /* DeviceInfo.swift */,
+				DC0BAD69212B106600409040 /* Response+ObjectMapper.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DC0BAD6A212B106600409040 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				DC0BAD6B212B106600409040 /* ToastProtocol.swift */,
+				DC0BAD6C212B106600409040 /* UIAlertViewProtocol.swift */,
+				DC0BAD6D212B106600409040 /* PopProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		DC0BAD6E212B106600409040 /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				DC0BAD6F212B106600409040 /* RxViewController.swift */,
+				DC0BAD70212B106600409040 /* BaseViewController.swift */,
+				DC0BAD71212B106600409040 /* RxBackItemViewController.swift */,
+				DC0BAD72212B106600409040 /* BaseBackItemViewController.swift */,
+				DC0BAD73212B106600409040 /* BaseWebViewController.swift */,
+				DC0BAD74212B106600409040 /* BasePageViewModel.swift */,
+				DC0BAD75212B106600409040 /* StaticWebViewViewController.swift */,
+				DC0BAD76212B106600409040 /* BaseNavigationController.swift */,
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		DC0BAD77212B106700409040 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		DC0BAD78212B106700409040 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DC0BAD19212B0EF100409040 /* Main.storyboard */,
+				DC0BAD1E212B0EF300409040 /* LaunchScreen.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		DC0BAD79212B106700409040 /* Configure */ = {
+			isa = PBXGroup;
+			children = (
+				DC0BAD7A212B106700409040 /* EnvConfigure.swift */,
+				DC0BAD7B212B106700409040 /* XCGLog.swift */,
+			);
+			path = Configure;
+			sourceTree = "<group>";
+		};
+		DC0BAD7C212B106700409040 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				DC0BAD1C212B0EF300409040 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		E789621CD9579E209C3F7A51 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D2298E502B8324C94A06D6E /* Pods-PersevereiOS.debug.xcconfig */,
+				7A075D6D892EE78FE3B88417 /* Pods-PersevereiOS.release.xcconfig */,
+				5E310CE0644C3324B7DBE59B /* Pods-PersevereiOSTests.debug.xcconfig */,
+				E6D9CBAFC5E7194C2572295E /* Pods-PersevereiOSTests.release.xcconfig */,
+				1A7A3474660B6FA3882E03A2 /* Pods-PersevereiOSUITests.debug.xcconfig */,
+				F7EB64903B85DE2B16690CCB /* Pods-PersevereiOSUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F053F4B5D3101DA9C0FF1662 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDDA70AE91067DCF162652CC /* Pods_PersevereiOS.framework */,
+				CB5D337E8E9C40C49773757B /* Pods_PersevereiOSTests.framework */,
+				66CA94E81B6DFC683877A2D3 /* Pods_PersevereiOSUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC0BAD11212B0EF100409040 /* PersevereiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC0BAD3A212B0EF300409040 /* Build configuration list for PBXNativeTarget "PersevereiOS" */;
+			buildPhases = (
+				BE5C812DE578778A8937B9D9 /* [CP] Check Pods Manifest.lock */,
+				DC0BAD0E212B0EF100409040 /* Sources */,
+				DC0BAD0F212B0EF100409040 /* Frameworks */,
+				DC0BAD10212B0EF100409040 /* Resources */,
+				F4E663718EF7C50621491051 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PersevereiOS;
+			productName = PersevereiOS;
+			productReference = DC0BAD12212B0EF100409040 /* PersevereiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC0BAD25212B0EF300409040 /* PersevereiOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC0BAD3D212B0EF300409040 /* Build configuration list for PBXNativeTarget "PersevereiOSTests" */;
+			buildPhases = (
+				0DD4B3CF9C64652465797233 /* [CP] Check Pods Manifest.lock */,
+				DC0BAD22212B0EF300409040 /* Sources */,
+				DC0BAD23212B0EF300409040 /* Frameworks */,
+				DC0BAD24212B0EF300409040 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC0BAD28212B0EF300409040 /* PBXTargetDependency */,
+			);
+			name = PersevereiOSTests;
+			productName = PersevereiOSTests;
+			productReference = DC0BAD26212B0EF300409040 /* PersevereiOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DC0BAD30212B0EF300409040 /* PersevereiOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC0BAD40212B0EF300409040 /* Build configuration list for PBXNativeTarget "PersevereiOSUITests" */;
+			buildPhases = (
+				E28F033A776126473650E6B6 /* [CP] Check Pods Manifest.lock */,
+				DC0BAD2D212B0EF300409040 /* Sources */,
+				DC0BAD2E212B0EF300409040 /* Frameworks */,
+				DC0BAD2F212B0EF300409040 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC0BAD33212B0EF300409040 /* PBXTargetDependency */,
+			);
+			name = PersevereiOSUITests;
+			productName = PersevereiOSUITests;
+			productReference = DC0BAD31212B0EF300409040 /* PersevereiOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC0BAD0A212B0EF100409040 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = zhaoyunyi;
+				TargetAttributes = {
+					DC0BAD11212B0EF100409040 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					DC0BAD25212B0EF300409040 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = DC0BAD11212B0EF100409040;
+					};
+					DC0BAD30212B0EF300409040 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = DC0BAD11212B0EF100409040;
+					};
+				};
+			};
+			buildConfigurationList = DC0BAD0D212B0EF100409040 /* Build configuration list for PBXProject "PersevereiOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC0BAD09212B0EF100409040;
+			productRefGroup = DC0BAD13212B0EF100409040 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC0BAD11212B0EF100409040 /* PersevereiOS */,
+				DC0BAD25212B0EF300409040 /* PersevereiOSTests */,
+				DC0BAD30212B0EF300409040 /* PersevereiOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC0BAD10212B0EF100409040 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC0BAD20212B0EF300409040 /* LaunchScreen.storyboard in Resources */,
+				DC0BAD1D212B0EF300409040 /* Assets.xcassets in Resources */,
+				DC0BAD1B212B0EF100409040 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC0BAD24212B0EF300409040 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC0BAD2F212B0EF300409040 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DD4B3CF9C64652465797233 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PersevereiOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE5C812DE578778A8937B9D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PersevereiOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E28F033A776126473650E6B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PersevereiOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4E663718EF7C50621491051 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PersevereiOS/Pods-PersevereiOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PersevereiOS/Pods-PersevereiOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC0BAD0E212B0EF100409040 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC0BAD7E212B106700409040 /* UITableView+FDKeyedHeightCache.m in Sources */,
+				DC0BAD7D212B106700409040 /* UITableView+FDTemplateLayoutCell.m in Sources */,
+				DC0BAD7F212B106700409040 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
+				DC0BAD93212B106700409040 /* UIAlertViewProtocol.swift in Sources */,
+				DC0BAD92212B106700409040 /* ToastProtocol.swift in Sources */,
+				DC0BAD96212B106700409040 /* BaseViewController.swift in Sources */,
+				DC0BAD95212B106700409040 /* RxViewController.swift in Sources */,
+				DC0BAD87212B106700409040 /* UIKitExtension.swift in Sources */,
+				DC0BAD8B212B106700409040 /* NetworkString.swift in Sources */,
+				DC0BAD8E212B106700409040 /* RequestConfig.swift in Sources */,
+				DC0BAD91212B106700409040 /* Response+ObjectMapper.swift in Sources */,
+				DC0BAD8D212B106700409040 /* RequstProtocol.swift in Sources */,
+				DC0BAD97212B106700409040 /* RxBackItemViewController.swift in Sources */,
+				DC0BAD8F212B106700409040 /* Single+ObjectMapper.swift in Sources */,
+				DC0BAD9D212B106700409040 /* EnvConfigure.swift in Sources */,
+				DC0BAD9C212B106700409040 /* BaseNavigationController.swift in Sources */,
+				DC0BAD94212B106700409040 /* PopProtocol.swift in Sources */,
+				DC0BAD81212B106700409040 /* HMSegmentedControl.m in Sources */,
+				DC0BAD84212B106700409040 /* UIViewController+TopMostViewController.swift in Sources */,
+				DC0BAD86212B106700409040 /* SwiftExtension.swift in Sources */,
+				DC0BAD83212B106700409040 /* ValidateRegex.swift in Sources */,
+				DC0BAD8C212B106700409040 /* BaseResponse.swift in Sources */,
+				DC0BAD82212B106700409040 /* FTPopOverMenu.m in Sources */,
+				DC0BAD99212B106700409040 /* BaseWebViewController.swift in Sources */,
+				DC0BAD9A212B106700409040 /* BasePageViewModel.swift in Sources */,
+				DC0BAD80212B106700409040 /* UITableView+FDIndexPathHeightCache.m in Sources */,
+				DC0BAD90212B106700409040 /* DeviceInfo.swift in Sources */,
+				DC0BAD85212B106700409040 /* UIConstant.swift in Sources */,
+				DC0BAD16212B0EF100409040 /* AppDelegate.swift in Sources */,
+				DC0BAD98212B106700409040 /* BaseBackItemViewController.swift in Sources */,
+				DC0BAD89212B106700409040 /* FoundationExtension.swift in Sources */,
+				DC0BAD8A212B106700409040 /* RequestAPI.swift in Sources */,
+				DC0BAD9B212B106700409040 /* StaticWebViewViewController.swift in Sources */,
+				DC0BAD88212B106700409040 /* SCNKitExtension.swift in Sources */,
+				DC0BAD9E212B106700409040 /* XCGLog.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC0BAD22212B0EF300409040 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC0BAD2B212B0EF300409040 /* PersevereiOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC0BAD2D212B0EF300409040 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC0BAD36212B0EF300409040 /* PersevereiOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC0BAD28212B0EF300409040 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC0BAD11212B0EF100409040 /* PersevereiOS */;
+			targetProxy = DC0BAD27212B0EF300409040 /* PBXContainerItemProxy */;
+		};
+		DC0BAD33212B0EF300409040 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC0BAD11212B0EF100409040 /* PersevereiOS */;
+			targetProxy = DC0BAD32212B0EF300409040 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DC0BAD19212B0EF100409040 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC0BAD1A212B0EF100409040 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC0BAD1E212B0EF300409040 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC0BAD1F212B0EF300409040 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC0BAD38212B0EF300409040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC0BAD39212B0EF300409040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC0BAD3B212B0EF300409040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D2298E502B8324C94A06D6E /* Pods-PersevereiOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83N8YY9K3Z;
+				INFOPLIST_FILE = PersevereiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhaoyunyi.PersevereiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC0BAD3C212B0EF300409040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A075D6D892EE78FE3B88417 /* Pods-PersevereiOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83N8YY9K3Z;
+				INFOPLIST_FILE = PersevereiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhaoyunyi.PersevereiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DC0BAD3E212B0EF300409040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E310CE0644C3324B7DBE59B /* Pods-PersevereiOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83N8YY9K3Z;
+				INFOPLIST_FILE = PersevereiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhaoyunyi.PersevereiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PersevereiOS.app/PersevereiOS";
+			};
+			name = Debug;
+		};
+		DC0BAD3F212B0EF300409040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6D9CBAFC5E7194C2572295E /* Pods-PersevereiOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83N8YY9K3Z;
+				INFOPLIST_FILE = PersevereiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhaoyunyi.PersevereiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PersevereiOS.app/PersevereiOS";
+			};
+			name = Release;
+		};
+		DC0BAD41212B0EF300409040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A7A3474660B6FA3882E03A2 /* Pods-PersevereiOSUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83N8YY9K3Z;
+				INFOPLIST_FILE = PersevereiOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhaoyunyi.PersevereiOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PersevereiOS;
+			};
+			name = Debug;
+		};
+		DC0BAD42212B0EF300409040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7EB64903B85DE2B16690CCB /* Pods-PersevereiOSUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83N8YY9K3Z;
+				INFOPLIST_FILE = PersevereiOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhaoyunyi.PersevereiOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PersevereiOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC0BAD0D212B0EF100409040 /* Build configuration list for PBXProject "PersevereiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC0BAD38212B0EF300409040 /* Debug */,
+				DC0BAD39212B0EF300409040 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC0BAD3A212B0EF300409040 /* Build configuration list for PBXNativeTarget "PersevereiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC0BAD3B212B0EF300409040 /* Debug */,
+				DC0BAD3C212B0EF300409040 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC0BAD3D212B0EF300409040 /* Build configuration list for PBXNativeTarget "PersevereiOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC0BAD3E212B0EF300409040 /* Debug */,
+				DC0BAD3F212B0EF300409040 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC0BAD40212B0EF300409040 /* Build configuration list for PBXNativeTarget "PersevereiOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC0BAD41212B0EF300409040 /* Debug */,
+				DC0BAD42212B0EF300409040 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC0BAD0A212B0EF100409040 /* Project object */;
+}
