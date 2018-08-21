@@ -1,8 +1,34 @@
 PODS:
+  - Alamofire (4.7.3)
+  - DeviceKit (1.7.0)
   - Differentiator (3.0.2)
-  - R.swift (5.0.0.alpha.1):
-    - R.swift.Library (~> 5.0.0.alpha.1)
-  - R.swift.Library (5.0.0.alpha.1)
+  - DynamicBlurView (2.0.2)
+  - DZNEmptyDataSet (1.8.1)
+  - ETNavBarTransparent (1.1.2)
+  - Fabric (1.7.11)
+  - IQKeyboardManagerSwift (6.1.1)
+  - LCActionSheet (3.5.0):
+    - Masonry (~> 1.1.0)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.1.0)
+  - MJRefresh (3.1.15.6)
+  - Moya/Core (11.0.2):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - Moya/RxSwift (11.0.2):
+    - Moya/Core
+    - RxSwift (~> 4.0)
+  - ObjcExceptionBridging (1.0.1):
+    - ObjcExceptionBridging/ObjcExceptionBridging (= 1.0.1)
+  - ObjcExceptionBridging/ObjcExceptionBridging (1.0.1)
+  - ObjectMapper (3.3.0)
+  - pop (1.0.10)
+  - PopupDialog (0.8.1):
+    - DynamicBlurView (~> 2.0)
+  - R.swift (4.0.0):
+    - R.swift.Library (~> 4.0.0)
+  - R.swift.Library (4.0.0)
+  - Result (3.2.4)
   - RxCocoa (4.2.0):
     - RxSwift (~> 4.0)
   - RxDataSources (3.0.2):
@@ -10,34 +36,129 @@ PODS:
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
   - RxSwift (4.2.0)
+  - SDWebImage (5.0.0-beta2):
+    - SDWebImage/Core (= 5.0.0-beta2)
+  - SDWebImage/Core (5.0.0-beta2)
   - SnapKit (4.0.0)
+  - Socket.IO-Client-Swift (13.3.0):
+    - Starscream (~> 3.0.2)
+  - Spring (1.0.5)
+  - Starscream (3.0.5)
+  - SwiftDate (5.0.5)
+  - Toast-Swift (3.0.1)
+  - TZImagePickerController (2.2.5)
+  - URLNavigator (2.0.6)
+  - WZLBadge (1.2.6)
+  - XCGLogger (6.0.4):
+    - XCGLogger/Core (= 6.0.4)
+  - XCGLogger/Core (6.0.4):
+    - ObjcExceptionBridging
+  - YYText (1.0.7)
 
 DEPENDENCIES:
-  - R.swift (~> 5.0.0.alpha.1)
+  - DeviceKit (~> 1.7.0)
+  - DZNEmptyDataSet (~> 1.8.1)
+  - ETNavBarTransparent (~> 1.1.2)
+  - Fabric (~> 1.7.11)
+  - IQKeyboardManagerSwift (~> 6.1.1)
+  - LCActionSheet (~> 3.5.0)
+  - MBProgressHUD (~> 1.1.0)
+  - MJRefresh (~> 3.1.15.6)
+  - Moya/RxSwift (~> 11.0.2)
+  - ObjectMapper (~> 3.3.0)
+  - pop (~> 1.0.10)
+  - PopupDialog (~> 0.8.1)
+  - R.swift (~> 4.0.0)
   - RxCocoa (~> 4.2.0)
   - RxDataSources (~> 3.0.2)
   - RxSwift (~> 4.2.0)
+  - SDWebImage (~> 5.0.0-beta2)
   - SnapKit (~> 4.0.0)
+  - Socket.IO-Client-Swift (~> 13.3.0)
+  - Spring (~> 1.0.5)
+  - SwiftDate (~> 5.0.5)
+  - Toast-Swift (~> 3.0.1)
+  - TZImagePickerController (~> 2.2.5)
+  - URLNavigator (~> 2.0.6)
+  - WZLBadge (~> 1.2.6)
+  - XCGLogger (~> 6.0.4)
+  - YYText (~> 1.0.7)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - DeviceKit
     - Differentiator
+    - DynamicBlurView
+    - DZNEmptyDataSet
+    - ETNavBarTransparent
+    - Fabric
+    - IQKeyboardManagerSwift
+    - LCActionSheet
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - Moya
+    - ObjcExceptionBridging
+    - ObjectMapper
+    - pop
+    - PopupDialog
     - R.swift
     - R.swift.Library
+    - Result
     - RxCocoa
     - RxDataSources
     - RxSwift
+    - SDWebImage
     - SnapKit
+    - Socket.IO-Client-Swift
+    - Spring
+    - Starscream
+    - SwiftDate
+    - Toast-Swift
+    - TZImagePickerController
+    - URLNavigator
+    - WZLBadge
+    - XCGLogger
+    - YYText
 
 SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  DeviceKit: 6a5bdeb103c03757bb94aef1ccb01e08bc8ef4ee
   Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
-  R.swift: 4fe17ab7e97da3942cf907235d07b6c320e23202
-  R.swift.Library: 50421682fe36726a830ad2b727c5362b8959cc1e
+  DynamicBlurView: aa6db4defc6e537eb86fc5e58dd3991666178399
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  ETNavBarTransparent: 0afd5a96a0bf07899b9140c585611d79ea6dbf96
+  Fabric: f233c9492b3bbc1f04e3882986740f7988a58edb
+  IQKeyboardManagerSwift: 977affaeb4d6e971975c7790a6850f31d38f1207
+  LCActionSheet: b30611ab20290fc830976b7ae90ea2dd4142fb1c
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MJRefresh: 0efa19656679d70a0f47cbe76e56c2271fe53a97
+  Moya: a725035953bc1c0eb1be505ab903984501d82440
+  ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
+  ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
+  pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
+  PopupDialog: 3d4e8e0795c3a614f407d730986c9b9af9781123
+  R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
+  R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
   RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
   RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
+  SDWebImage: 8e4aaf5805e954ad426702adf5a8c012a7f581d1
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  Socket.IO-Client-Swift: 0afb192a562db90d50e3f7f7421c06925a3f0179
+  Spring: 17901566c8ecf3a1327902b940406c64512f9bb1
+  Starscream: faf918b2f2eff7d5dd21180646bf015a669673bd
+  SwiftDate: 963ed9f6d97e2de396d4ce73174185de04f9cdb6
+  Toast-Swift: ba0b01b095aada709d915f9beb1d38184a2721c3
+  TZImagePickerController: cf5c9f0ae343e2eb1912b26e4d9fa811b3159319
+  URLNavigator: 2357a32f3b3787b748bf87deb927761f8b0f7f53
+  WZLBadge: 9ec779dcfd94c825518b395e8315fccaabff1bfa
+  XCGLogger: 4fc1bc0bdd5828cb8dc8da7a843536cda1bea8f3
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 0b00d12d8e4d3e69ed5905a0d714824b9a248756
+PODFILE CHECKSUM: 91adb174f1ad7d799ae2cc5d8e97fba1799772a9
 
 COCOAPODS: 1.5.3
