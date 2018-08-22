@@ -28,6 +28,11 @@ PODS:
   - R.swift (4.0.0):
     - R.swift.Library (~> 4.0.0)
   - R.swift.Library (4.0.0)
+  - Realm (3.7.6):
+    - Realm/Headers (= 3.7.6)
+  - Realm/Headers (3.7.6)
+  - RealmSwift (3.7.6):
+    - Realm (= 3.7.6)
   - Result (3.2.4)
   - RxCocoa (4.2.0):
     - RxSwift (~> 4.0)
@@ -69,6 +74,7 @@ DEPENDENCIES:
   - pop (~> 1.0.10)
   - PopupDialog (~> 0.8.1)
   - R.swift (~> 4.0.0)
+  - RealmSwift (~> 3.7.6)
   - RxCocoa (~> 4.2.0)
   - RxDataSources (~> 3.0.2)
   - RxSwift (~> 4.2.0)
@@ -105,6 +111,8 @@ SPEC REPOS:
     - PopupDialog
     - R.swift
     - R.swift.Library
+    - Realm
+    - RealmSwift
     - Result
     - RxCocoa
     - RxDataSources
@@ -142,6 +150,8 @@ SPEC CHECKSUMS:
   PopupDialog: 3d4e8e0795c3a614f407d730986c9b9af9781123
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
+  Realm: 9eaecad54712d6246d08ba34c10f354e4715d7d3
+  RealmSwift: 1fe08b4ebaeeaacf17f9ba0343f7b25c9fc31fa6
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
   RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
@@ -159,6 +169,6 @@ SPEC CHECKSUMS:
   XCGLogger: 4fc1bc0bdd5828cb8dc8da7a843536cda1bea8f3
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 91adb174f1ad7d799ae2cc5d8e97fba1799772a9
+PODFILE CHECKSUM: 5374007339e570fb88a5d1bbd94817f1d4b881b6
 
 COCOAPODS: 1.5.3

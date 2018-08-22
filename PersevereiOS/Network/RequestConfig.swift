@@ -75,17 +75,18 @@ let staticDisposeBag = DisposeBag()
 //let plugins: [PluginType] = [NetworkLoggerPlugin(verbose: true, responseDataFormatter: JSONResponseDataFormatter)]
 
 public let endpointClosure = { (target: RequestAPI) -> Endpoint in
-    
-    let session = SessionManager.shared.session
-    // 此处拼接会带/ 导致下载 file 404
-    var url = target.baseURL.appendingPathComponent(target.path).absoluteString + "?session=" + session
-    
-    switch target {
-    case .allPath:
-        url = target.baseURL.absoluteString + "?session=" + session
-    default:
-        break
-    }
+//
+//    let session = SessionManager.shared.session
+//    // 此处拼接会带/ 导致下载 file 404
+    var url = target.baseURL.appendingPathComponent(target.path).absoluteString
+//        + "?session=" + session
+//
+//    switch target {
+//    case .allPath:
+//        url = target.baseURL.absoluteString + "?session=" + session
+//    default:
+//        break
+//    }
 //    var loginToken = ""
 //    var userId = ""
     

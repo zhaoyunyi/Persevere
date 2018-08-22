@@ -320,7 +320,7 @@ public extension Int64 {
         let time = TimeInterval(Double(self))
         // 消息时间
         let date = Date(timeIntervalSince1970: time)
-        let dateInRome = DateInRegion(absoluteDate: date)
+        let dateInRome = DateInRegion(date)
         // 当前时间
         let now = DateInRegion()
         
@@ -343,7 +343,7 @@ public extension Int64 {
             if month > 0 || day > 7 {
                 return String(format: "%d月%d日 %d:%02d", dateInRome.month, dateInRome.day, dateInRome.hour, dateInRome.minute)
             } else if day > 2 {
-                return String(format: "%@ %d:%02d", dateInRome.weekdayName, dateInRome.hour, dateInRome.minute)
+                return String(format: "%@ %d:%02d", dateInRome.weekdayName(SymbolFormatStyle.default), dateInRome.hour, dateInRome.minute)
             } else if day == 2 {
                 return String(format: "前天 %d:%d", dateInRome.hour, dateInRome.minute)
             } else if dateInRome.isYesterday {
@@ -366,7 +366,7 @@ public extension Int64 {
         let time = TimeInterval(Double(self))
         // 消息时间
         let date = Date(timeIntervalSince1970: time)
-        let dateInRome = DateInRegion(absoluteDate: date)
+        let dateInRome = DateInRegion(date)
         // 当前时间
         let now = DateInRegion()
         
@@ -389,7 +389,7 @@ public extension Int64 {
             if month > 0 || day > 7 {
                 return String(format: "%d-%d", dateInRome.month, dateInRome.day, dateInRome.hour, dateInRome.minute)
             } else if day > 2 {
-                return String(format: "%@%d:%d", dateInRome.weekdayName, dateInRome.hour, dateInRome.minute)
+                return String(format: "%@%d:%d", dateInRome.weekdayName(SymbolFormatStyle.default), dateInRome.hour, dateInRome.minute)
             } else if day == 2 {
                 return String(format: "前天%d:%d", dateInRome.hour, dateInRome.minute)
             } else if dateInRome.isYesterday {

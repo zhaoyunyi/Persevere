@@ -38,11 +38,12 @@ extension RequestAPI: TargetType {
     public var baseURL: URL {
         switch self {
         case let .clubAPI(request):
-            if request.overloadFlag() {
-                return URL(string: wrapRoomRequest(path: baseApiUrl))!
-            } else {
-                return URL(string:  baseApiUrl)!
-            }
+            return URL(string:  baseApiUrl)!
+//            if request.overloadFlag() {
+//                return URL(string: wrapRoomRequest(path: baseApiUrl))!
+//            } else {
+//                return URL(string:  baseApiUrl)!
+//            }
         case let .allPath(request):
             
             return URL(string: request.path)!

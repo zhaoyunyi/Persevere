@@ -23,7 +23,7 @@ open class BaseNavigationController: UINavigationController {
         UINavigationBar.appearance().titleTextAttributes = attributes
 //        UINavigationBar.appearance().tintColor = black333
         
-        self.navigationBar.setBackgroundImage(R.image.navbar_backColor(), for: UIBarMetrics.default)
+//        self.navigationBar.setBackgroundImage(R.image.navbar_backColor(), for: UIBarMetrics.default)
     }
     
     override open func pushViewController(_ viewController: UIViewController, animated: Bool) {

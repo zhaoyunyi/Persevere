@@ -115,8 +115,7 @@ extension ResultProcol {
             case 0:
                 return APICodeType.success
             case 0x00000002: // 用户Session 验证不合法
-                let imp = UserInfoImp()
-                imp.userSessionOverTime()
+                break;
             default:
                 break
             }

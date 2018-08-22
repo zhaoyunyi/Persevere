@@ -41,22 +41,22 @@ open class BaseBackItemViewController: BaseViewController {
         }
     }
     
-    open func hideNavbar() {
-
-        self.navBarBgAlpha = 0
-        self.navBarTintColor = .white
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-    }
-    
-    open func setupNavbarColor() {
-        self.navigationController?.navigationBar.setBackgroundImage(R.image.navbar_backColor(), for: UIBarMetrics.default)
-    }
+//    open func hideNavbar() {
+//
+//        self.navBarBgAlpha = 0
+//        self.navBarTintColor = .white
+//        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+//    }
+//
+//    open func setupNavbarColor() {
+//    self.navigationController?.navigationBar.setBackgroundImage(R.image.navbar_backColor(), for: UIBarMetrics.default)
+//    }
     
     open func setupUI() {
        
         backButton.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0)
         backButton.frame = CGRect(x: 0, y: 0, width: 40, height: 44)
-        backButton.setImage(R.image.return(), for: UIControlState.normal)
+//        backButton.setImage(R.image.return(), for: UIControlState.normal)
         backButton.addTarget(self, action: #selector(backItemClicked(button:)), for: UIControlEvents.touchUpInside)
 //        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backButton)
 
